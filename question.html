@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Задать вопрос | Открытый интеллектуальный клуб</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap&_v=20241016110723" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo logo">
+					<a href="#" class="logo__img">
+						<img src="img/open.png" alt="Логотип">
+					</a>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#about" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="#contacts" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="club border-bottom">
+			<section class="club__registration registration">
+				<div class="registration__container">
+					<h4 class="question__title club__title text-center">
+						придумайте и отправьте
+					</h4>
+					<h3 class="registration__title club__title text-orange text-center">
+						Вопрос для знатоков <br> Открытого интеллектуального клуба
+					</h3>
+					<div class="registration__text">
+						<ul>
+							<li>• От одного сотрудника принимается не более 15 вопросов. </li>
+							<li>• Для каждого вопроса необходимо заполнить отдельную форму.</li>
+						</ul>
+					</div>
+					<div class="info-form">
+						<form action="" class="registration__form" id="orderServiceForm">
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input" required="required" type="text" name="CONTACT_FIO" id="CONTACT_FIO" placeholder="Ваше имя*" />
+								</div>
+							</div>
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input" type="text" name="POSITION" id="POSITION" placeholder="Должность*" />
+								</div>
+							</div>
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input" type="text" name="COMPANY" id="COMPANY" placeholder="Наименование предприятия*" />
+								</div>
+							</div>
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input phone" required="required" type="tel" name="MOBILE" id="MOBILE" placeholder="Телефон для связи*" />
+								</div>
+							</div>
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input" required="required" type="email" name="EMAIL" id="EMAIL" placeholder="E-mail*" />
+								</div>
+							</div>
+							<div class="registration__input-item">
+								<div class="registration__input-wrapper">
+									<input class="registration__input" type="text" name="INFO" id="INFO" placeholder="Дополнительная информация о себе"/>
+								</div>
+							</div>
+							<!-- описание вопроса-->
+							<div class="question__block">
+								<div class="question__textarea">
+									<textarea id="QUESTION_TEXT" required></textarea>
+									<label for="QUESTION_TEXT">Текст вопроса*</label>
+								</div>
+								<div class="question__textarea">
+									<textarea id="QUESTION_ANSWER" required></textarea>
+									<label for="QUESTION_ANSWER">Текст ответа*</label>
+								</div>
+								<div class="question__textarea">
+									<textarea id="QUESTION_LINK"></textarea>
+									<label for="QUESTION_LINK">Ссылка на видеовопрос и ответ <span>(если вопрос задается в видеофрмате)</span>
+									</label>
+								</div>
+								<div class="question__textarea">
+									<textarea id="QUESTION_SOURCE" required></textarea>
+									<label for="QUESTION_SOURCE">Источник информации*</label>
+								</div>
+								<div class="input__wrapper">
+									<label for="FILE">Ваше фото*</label>
+									<div>
+										<input name="file" type="file" id="input__file" class="input input__file" multiple>
+										<label for="input__file" class="input__file-button">
+											<span class="input__file-icon-wrapper"><img class="input__file-icon" src="img/add.svg" alt="Выбрать файл" width="25"></span>
+											<span class="input__file-button-text">Выберите файл</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="registration__agreement check">
+								<input required="required" checked type="checkbox" value="Y" name="check" id="check" class="term">
+								<label for="check" aria-required="true"><span></span> </label>
+								<span class="label">
+									Подтверждаю согласие с
+									<a href="https://agrobel.ru/assets/politika.pdf">политикой конфиденциальности и обработки персональных
+										данных.</a>
+								</span>
+							</div>
+							<div class="registration__row">
+								<button type="button" name="submit" class="registration__button">
+									Отправить
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="contacts">
+			<div class="footer__container">
+				<div class="footer__logo logo__img">
+					<img src="img/open.png" alt="Логотип">
+				</div>
+				<div class="footer__contacts contacts">
+					<h3 class="contacts__title">Контакты</h3>
+					<div class="contacts__items">
+						<div class="contacts__item">
+							<div>Электронная почта:</div>
+							<a href="mailto:pr@agrobel.ru">pr@agrobel.ru</a>
+						</div>
+						<div class="contacts__item">
+							<div>Адрес</div>
+							<div>Россия, Белгородская область,<br>п. Разумное, ул. Прелестная, 1</div>
+						</div>
+						<div class="contacts__item">
+							<div>Телефон:</div>
+							<a href="tel:+74722222222">+7 (4722) 58-69-15</a>
+							<p style="font-size: 15px;">с 09.00 ч. до 18.00 ч., перерыв с 13.00 ч. до 14.00 ч.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.js"></script>
+	<script>
+		let inputs = document.querySelectorAll('.input__file');
+		Array.prototype.forEach.call(inputs, function(input) {
+			let label = input.nextElementSibling,
+				labelVal = label.querySelector('.input__file-button-text').innerText;
+
+			input.addEventListener('change', function(e) {
+				let countFiles = '';
+				if (this.files && this.files.length >= 1)
+					countFiles = this.files.length;
+
+				if (countFiles)
+					label.querySelector('.input__file-button-text').innerText = 'Файл загружен';
+				else
+					label.querySelector('.input__file-button-text').innerText = labelVal;
+			});
+		});
+	</script>
+</body>
+
+</html>
